@@ -1,0 +1,26 @@
+@import "tailwindcss";
+
+/* Custom scrollbar styles for better mobile experience */
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+/* Ensure proper touch scrolling on mobile */
+* {
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Prevent horizontal overflow on mobile */
+html, body {
+  overflow-x: hidden;
+}
+
+/* Better text selection on mobile */
+* {
+  -webkit-tap-highlight-color: transparent;
+}
